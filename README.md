@@ -8,3 +8,10 @@ Aspect-oriented programming is a programming paradigm that aims to increase modu
 It does so by adding additional behavior to existing code (an advice) without modifying the code itself.
 
 Aspect: A modularization of a concern that cuts across multiple classes
+
+
+A proxy is a well-used design pattern. To put it simply, a proxy is an object that looks like another object, but adds special functionality behind the scene.
+
+Spring AOP is proxy-based. AOP proxy is an object created by the AOP framework in order to implement the aspect contracts in runtime.
+
+Spring AOP defaults to using standard JDK dynamic proxies for AOP proxies. This enables any interface (or set of interfaces) to be proxied. Spring AOP can also use CGLIB proxies. This is necessary to proxy classes, rather than interfaces.
