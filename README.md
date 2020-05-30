@@ -18,3 +18,17 @@ A proxy is a well-used design pattern. To put it simply, a proxy is an object th
 Spring AOP is proxy-based. AOP proxy is an object created by the AOP framework in order to implement the aspect contracts in runtime.
 
 Spring AOP defaults to using standard JDK dynamic proxies for AOP proxies. This enables any interface (or set of interfaces) to be proxied. Spring AOP can also use CGLIB proxies. This is necessary to proxy classes, rather than interfaces.
+
+Joinpoint is a point of execution of the program, such as the execution of a method or the handling of an exception. 
+In Spring AOP, a joinpoint always represents a method execution.
+Pointcut is a predicate or expression that matches join points.
+Advice is associated with a pointcut expression and runs at any join point matched by the pointcut.
+Spring uses the AspectJ pointcut expression language by default.
+
+Advice types:
+1) Before
+2) After
+3) Around
+4) After returning
+5) After throwing
+
