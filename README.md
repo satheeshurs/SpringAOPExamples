@@ -32,3 +32,10 @@ Advice types:
 4) After returning
 5) After throwing
 
+PointCuts:
+1) Execution
+2) within
+3) target
+4) this
+5) annotations
+6) args
